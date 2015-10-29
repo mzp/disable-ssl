@@ -1,7 +1,3 @@
 require "disable/ssl/version"
-
-module Disable
-  module Ssl
-    # Your code goes here...
-  end
-end
+require 'openssl'
+OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
